@@ -1,7 +1,21 @@
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* fills the whole screen */
-    background-color: lightblue;
+body {
+    background-color: purple;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+p {
+    font-size: 1.2rem;
 }
