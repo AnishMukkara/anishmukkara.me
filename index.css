@@ -22,7 +22,7 @@ p {
 h2{
     color: rgb(232, 203, 19);
      
-    animation: bounce 1s infinite alternate;
+    animation: bounce 3s infinite alternate;
 
 }
 
