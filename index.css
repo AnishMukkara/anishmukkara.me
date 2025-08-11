@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(47, 151, 255);
+    background-color: rgb(248, 255, 205);
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,22 +7,23 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    animation: bounce 1s infinite alternate;
+    font-size: xx-large;
+    
+    color: black;
 }
 
+h2{
+    color: black;
+    
+}
 @keyframes bounce {
     from { transform: translateY(0); }
-    to { transform: translateY(-10px); }
+    to { transform: translateY(750px); }
 }
 
-p {
-    font-size: 1.2rem;
+h3 {
+    animation: bounce 5s infinite alternate;
+    color: black;
 }
-h2{
-    color: rgb(232, 203, 19);
-     
-    animation: bounce 3s infinite alternate;
 
-}
 
