@@ -18,11 +18,11 @@ h2{
 }
 @keyframes bounce {
     from { transform: translateY(0); }
-    to { transform: translateY(750px); }
+    to { transform: translateY(700px); }
 }
 
 h3 {
-    animation: bounce 5s infinite alternate;
+    animation: bounce 3s infinite alternate;
     color: rgb(0, 0, 0);
 }
 
