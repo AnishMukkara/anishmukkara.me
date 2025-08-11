@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-color: rgb(47, 151, 255);
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -19,3 +19,10 @@ h1 {
 p {
     font-size: 1.2rem;
 }
+h2{
+    color: rgb(232, 203, 19);
+     
+    animation: bounce 1s infinite alternate;
+
+}
+
