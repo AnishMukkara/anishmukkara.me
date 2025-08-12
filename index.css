@@ -1,40 +1,23 @@
 body {
-  background: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 h1 {
-  font-size: 36px;
-  animation: glow 2s infinite alternate;
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
 }
 
-h3 {
-  font-size: 24px;
-  color: lightgreen;
-  animation: bounce 2s infinite alternate;
+h2 {
+  color: rgb(255, 213, 0);
 }
 
+/* Visit counter styling */
 #visit-count {
   font-size: 20px;
-  margin-top: 20px;
-  animation: bounce 2s infinite alternate;
-}
-
-/* Animations */
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-}
-
-@keyframes glow {
-  from { text-shadow: 0 0 10px lime; }
-  to { text-shadow: 0 0 20px green; }
+  margin: 20px 0;
+  color: cyan;
 }
