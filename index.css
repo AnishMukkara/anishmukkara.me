@@ -15,9 +15,8 @@ h2 {
   color: rgb(255, 213, 0);
 }
 
-/* Visit counter styling */
-#visit-count {
-  font-size: 20px;
-  margin: 20px 0;
-  color: cyan;
+.visit-counter {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: rgb(0, 255, 170);
 }

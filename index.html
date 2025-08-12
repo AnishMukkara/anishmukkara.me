@@ -10,9 +10,16 @@
   <h1>Welcome to anishmukkara.me ✨🌆🌃</h1>
   <h2>Here you can explore my latest work and learn more about upcoming projects.</h2>
 
-  <!-- Visit Counter -->
-  <p id="visit-count">Loading total visits...</p>
+  <p class="visit-counter">
+    Total visits: <span id="visits">Loading...</span>
+  </p>
 
-  <script src="index.js"></script>
+  <script>
+    fetch('https://api.countapi.xyz/hit/anishmukkara-me/visits')
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('visits').innerText = res.value;
+      });
+  </script>
 </body>
 </html>
