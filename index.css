@@ -1,3 +1,7 @@
+html {
+  color-scheme: dark;
+}
+
 *,
 *::before,
 *::after {
@@ -7,8 +11,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,26 +23,32 @@ body {
 
 .home h1 {
   margin: 0;
-  color: #fff;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
   font-size: clamp(2.2rem, 6.5vw, 4.5rem);
   font-weight: 700;
   line-height: 1.15;
 }
 
-.about-btn {
+.about-btn,
+.about-btn:link,
+.about-btn:visited,
+.about-btn:active {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.7rem 1.4rem;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   background: transparent;
-  color: #fff;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
   font-size: 1.05rem;
   text-decoration: none;
 }
 
 .about-btn:hover {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000;
 }
 
 .page-main {
@@ -49,7 +59,8 @@ body {
 
 .page-main h1 {
   margin: 0 0 0.75rem;
-  color: #fff;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
   font-size: clamp(2rem, 5vw, 3.2rem);
 }
 
@@ -64,12 +75,15 @@ body {
   line-height: 1.6;
 }
 
-.back-link {
+.back-link,
+.back-link:link,
+.back-link:visited {
   display: inline-block;
   margin-bottom: 1.5rem;
   padding: 0.45rem 0.9rem;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ffffff;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
   font-size: 0.95rem;
   text-decoration: none;
 }
