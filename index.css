@@ -64,13 +64,9 @@ body {
   font-size: clamp(2rem, 5vw, 3.2rem);
 }
 
-.role,
-.intro {
-  color: #cfcbc3;
-}
-
 .intro {
   margin: 0 0 1rem;
+  color: #ffffff;
   font-size: 1.08rem;
   line-height: 1.6;
 }
