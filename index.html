@@ -5,28 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
   <title>anishmukkara.me</title>
+  <meta name="description" content="Anish Mukkara — developer and content creator building web projects, games, and videos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=10">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=11">
 </head>
-<body class="home">
-  <header class="topbar">
-    <nav class="nav" aria-label="Primary">
-      <a class="nav-link is-active" href="index.html" aria-current="page">Home</a>
-      <a class="nav-link" href="aboutme.html">About</a>
-      <a class="nav-link" href="contentcreation.html">Content creation</a>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Primary">
+      <a href="index.html" class="brand">anish<span>mukkara</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="contentcreation.html">Content creation</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="home-main">
-    <h1>welcome to anishmukkara.me</h1>
-    <p class="intro">
-      I’m a developer and content creator focused on crafting modern web experiences and building digital projects that combine functionality with creativity. My work revolves around experimenting, learning, and continuously improving and transforming ideas into polished, interactive products.
-    </p>
-    <p class="intro">
-      This website is a living space where I document that journey, regularly updating it with new projects, concepts, and progress. As I grow, so will this collection, serving as both a portfolio of my work and a reflection of my evolving skills in development and digital creation.
-    </p>
+  <main>
+    <section class="hero wrap">
+      <p class="hero-kicker">Developer &amp; content creator</p>
+      <h1>I build web projects, games, and videos — <em>and document the process here.</em></h1>
+      <p class="hero-sub">I’m focused on crafting modern web experiences and digital projects that combine functionality with creativity. This site is where I share what I’m making.</p>
+      <div class="hero-actions">
+        <a href="contentcreation.html" class="btn btn-solid">See my content</a>
+        <a href="aboutme.html" class="btn btn-ghost">About me</a>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>What I work on</h2>
+        <p>Three things I keep coming back to, in different combinations.</p>
+      </div>
+      <div class="focus-grid">
+        <div class="focus-item">
+          <span class="tag">Development</span>
+          <h3>Building things for the web</h3>
+          <p>Sites, small tools, and game ideas — this page included. I like taking something from a rough idea to a working, polished version.</p>
+        </div>
+        <div class="focus-item">
+          <span class="tag">Content creation</span>
+          <h3>YouTube videos &amp; shorts</h3>
+          <p>Filming, editing, and posting regularly, and tracking what’s working.</p>
+        </div>
+        <div class="focus-item">
+          <span class="tag">Exploring</span>
+          <h3>Games &amp; geography</h3>
+          <p>Roblox, world geography, and whatever new idea I’m curious about that week.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="journey">
+        <h2>Always in progress</h2>
+        <div class="journey-body">
+          <p>This website is a living space where I document that journey, regularly updating it with new projects, concepts, and progress. As I grow, so will this collection — a portfolio of my work and a reflection of my evolving skills.</p>
+          <p>Check the content page for what I’ve published recently, or head to the about page to find out more about me.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a href="index.html" class="brand">anish<span>mukkara</span></a>
+      <ul class="footer-links">
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="contentcreation.html">Content creation</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

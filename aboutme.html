@@ -7,19 +7,23 @@
   <title>About Me — Anish Mukkara</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=10">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=11">
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Primary">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link is-active" href="aboutme.html" aria-current="page">About</a>
-      <a class="nav-link" href="contentcreation.html">Content creation</a>
+  <header>
+    <nav class="wrap" aria-label="Primary">
+      <a href="index.html" class="brand">anish<span>mukkara</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html" aria-current="page">About</a></li>
+        <li><a href="contentcreation.html">Content creation</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main wrap">
+    <p class="page-kicker">About</p>
     <h1>About Me</h1>
     <p class="intro">Hi! I’m Anish 👋</p>
     <p class="intro">
@@ -32,5 +36,15 @@
       I’m always trying something new, whether it’s creating content, developing games, editing videos, or exploring the world around me. 🚀
     </p>
   </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a href="index.html" class="brand">anish<span>mukkara</span></a>
+      <ul class="footer-links">
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="contentcreation.html">Content creation</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
