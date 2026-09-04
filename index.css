@@ -53,15 +53,19 @@ body {
   background: #2d2d2d;
 }
 
-.home {
-  text-align: center;
+.home-main {
+  width: min(42rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 3.5rem 0 4.5rem;
 }
 
 .home h1 {
-  margin: 4rem 1.5rem 0;
+  margin: 0 0 1.35rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #2a2a2a;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff;
-  font-size: clamp(2.2rem, 6.5vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 700;
   line-height: 1.15;
 }
