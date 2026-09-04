@@ -17,6 +17,9 @@ body {
 }
 
 .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,21 +32,6 @@ body {
   display: flex;
   align-items: center;
   gap: 0.35rem 1.15rem;
-}
-
-.avatar {
-  display: grid;
-  place-items: center;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.25rem;
-  border-radius: 50%;
-  background: #2d2d2d;
-  color: #ffffff;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-decoration: none;
 }
 
 .nav-link,
