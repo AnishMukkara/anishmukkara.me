@@ -1,275 +1,75 @@
-:root {
-  --bg: #0c0c0e;
-  --bg-elevated: #141418;
-  --ink: #eceae4;
-  --muted: #9a9790;
-  --line: #2a2a30;
-  --accent: #c4f542;
-  --accent-ink: #101010;
-  --max: 72rem;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(196, 245, 66, 0.08), transparent 50%),
-    radial-gradient(800px 400px at 100% 0%, rgba(255, 255, 255, 0.04), transparent 45%),
-    var(--bg);
-  color: var(--ink);
-  font-family: "IBM Plex Sans", system-ui, sans-serif;
-  line-height: 1.6;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: inherit;
+.home {
+  text-align: center;
+  padding: 4rem 1.5rem 2rem;
 }
 
-.wrap {
-  width: min(var(--max), calc(100% - 2.5rem));
-  margin-inline: auto;
-}
-
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.4rem 0 1.2rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.wordmark {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: lowercase;
-  text-decoration: none;
-  color: var(--muted);
-}
-
-.wordmark:hover {
-  color: var(--ink);
-}
-
-.nav {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.nav a {
-  font-size: 0.92rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.nav a:hover,
-.nav a[aria-current="page"] {
-  color: var(--ink);
-}
-
-.hero {
-  padding: 4.5rem 0 3.5rem;
-}
-
-.eyebrow {
-  margin: 0 0 0.85rem;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-h1 {
+.home h1 {
   margin: 0;
-  max-width: 14ch;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(2.6rem, 7vw, 5.4rem);
-  font-weight: 500;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  color: #fff;
+  font-size: clamp(2.2rem, 6.5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
 }
 
-.lede {
-  max-width: 36rem;
-  margin: 1.4rem 0 0;
-  font-size: 1.15rem;
-  color: var(--muted);
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 2rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.72rem 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+.about-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #fff;
   background: transparent;
-  color: var(--ink);
-  font: inherit;
-  font-size: 0.95rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  border-color: var(--ink);
-}
-
-.btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 560;
-}
-
-.btn-primary:hover {
-  filter: brightness(1.05);
-}
-
-.section {
-  padding: 1rem 0 4.5rem;
-}
-
-.section-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.section h2 {
-  margin: 0;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  min-height: 12.5rem;
-  padding: 1.35rem 1.4rem 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 1.1rem;
-  background: var(--bg-elevated);
+  color: #fff;
+  font-size: 1.05rem;
   text-decoration: none;
 }
 
-.card:hover {
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-}
-
-.card .tag {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.card h3 {
-  margin: 0.85rem 0 0.4rem;
-  font-size: 1.25rem;
-  font-weight: 560;
-}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  flex: 1;
-}
-
-.card .go {
-  margin-top: 1.1rem;
-  font-size: 0.9rem;
-  color: var(--accent);
-}
-
-.about-preview {
-  max-width: 40rem;
-  color: var(--muted);
-}
-
-.about-preview p {
-  margin: 0 0 1rem;
+.about-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 .page-main {
+  width: min(40rem, calc(100% - 2.5rem));
+  margin: 0 auto;
   padding: 3.5rem 0 4rem;
 }
 
-.role {
-  margin: 0.75rem 0 1.75rem;
-  color: var(--muted);
+.page-main h1 {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.2rem);
 }
 
+.role,
 .intro {
-  max-width: 40rem;
-  margin: 0 0 1rem;
-  font-size: 1.08rem;
   color: #cfcbc3;
 }
 
-.site-footer {
-  padding: 1.25rem 0 2.25rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.85rem;
+.intro {
+  margin: 0 0 1rem;
+  font-size: 1.08rem;
+  line-height: 1.6;
 }
 
-.rick-page {
-  text-align: center;
-}
-
-.rick-page img {
-  width: min(100%, 28rem);
-  margin: 1.5rem 0;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-}
-
-.rick-page h1 {
-  max-width: none;
-  font-size: clamp(1.8rem, 5vw, 3rem);
-}
-
-.rick-page .actions {
-  justify-content: center;
-}
-
-@media (max-width: 640px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero {
-    padding-top: 3rem;
-  }
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.45rem 0.9rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
 }
