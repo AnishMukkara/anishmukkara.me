@@ -442,6 +442,7 @@ footer {
   font-size: 13px;
   font-weight: 600;
   color: #fff;
+  object-fit: cover;
 }
 
 .yt-meta {
