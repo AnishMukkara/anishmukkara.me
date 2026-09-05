@@ -469,25 +469,6 @@ footer {
   text-overflow: ellipsis;
 }
 
-.yt-sub-btn {
-  flex: 0 0 auto;
-  margin: 0;
-  padding: 8px 16px;
-  border: 0;
-  border-radius: 18px;
-  background: #fff;
-  color: #0f0f0f;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.yt-sub-btn.is-on {
-  background: #272727;
-  color: #fff;
-}
-
 .stats-images img {
   display: block;
   width: 100%;
