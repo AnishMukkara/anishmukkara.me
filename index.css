@@ -417,8 +417,75 @@ footer {
   padding: 0;
 }
 
-.subpage-btn[aria-current="page"] {
-  border-color: var(--white);
+.yt-subs {
+  margin-top: 32px;
+  max-width: 520px;
+  background: #0f0f0f;
+  border: 1px solid var(--line);
+}
+
+.yt-sub {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  min-height: 64px;
+}
+
+.yt-avatar {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.yt-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.yt-name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yt-handle {
+  color: #aaa;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yt-sub-btn {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 18px;
+  background: #fff;
+  color: #0f0f0f;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.yt-sub-btn.is-on {
+  background: #272727;
+  color: #fff;
 }
 
 .stats-images img {
