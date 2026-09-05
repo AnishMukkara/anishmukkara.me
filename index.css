@@ -319,7 +319,7 @@ footer {
 }
 
 .stats-box {
-  margin: 40px 0 0;
+  margin: 0;
   border: 1px solid var(--line);
   background: var(--panel);
 }
@@ -356,6 +356,36 @@ footer {
   display: grid;
   gap: 16px;
   padding: 0 20px 20px;
+}
+
+.subpage-stack {
+  margin-top: 40px;
+  display: grid;
+  gap: 16px;
+}
+
+.subpage-btn {
+  display: block;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.subpage-btn:hover {
+  border-color: var(--white);
+}
+
+.page-main > .stats-images {
+  margin-top: 40px;
+  padding: 0;
+}
+
+.back-row {
+  margin-top: 28px;
 }
 
 .stats-images img {
