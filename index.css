@@ -405,18 +405,10 @@ footer {
   border-bottom: 1px solid var(--line);
 }
 
-.date-block {
+.date-list {
   margin-top: 40px;
-}
-
-.date-block h2 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 16px;
-}
-
-.date-block .stats-images {
-  padding: 0;
+  display: grid;
+  gap: 12px;
 }
 
 .page-main > .stats-images,
